@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -32,12 +33,15 @@
     </header>
     <main>
       <section class="home">
-        <h1 class="home-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br/>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="btn">Заказать услугу</button>
-      </section>
+        <div class="container">
+          <h1 class="home-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <button type="button" class="btn">Заказать услугу</button>
+        </div>
+       </section>
       <section class="details">
+        <div class="container">
         <h2 hidden>Особенности</h2>
-          <ul class="container">
+          <ul class="holder">
             <li>
               <h3 class="details-title">Внимание к деталям</h3>
               Идейные соображения, а также начало повседневной работы по формированию позиции.
@@ -55,8 +59,10 @@
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </li>
           </ul>
+        </div>
         </section>
       <section class="about">
+        <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class="about-item">
           <li>
@@ -72,32 +78,34 @@
           </li>
           <li><img src="./images/img3.jpg" alt="Дизайн" width="370" height="294" /></li>
         </ul>
+      </div>
       </section>
       <section class="team">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-item">
           <li>
             <img src="./images/foto1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-            <h3 class="team-person">Игорь Демьяненко</h3>
-            <p lang="en">Product Designer</p>
+            <div class="border"><h3 class="team-person">Игорь Демьяненко</h3>
+            <p lang="en">Product Designer</p></div>
           </li>
           <li>
             <img src="./images/foto2.jpg" alt="Ольга Репина" width="270" height="260" />
-            <h3 class="team-person">Ольга Репина</h3>
-            <p lang="en">Frontend Developer</p>
+            <div class="border"><h3 class="team-person">Ольга Репина</h3>
+            <p lang="en">Frontend Developer</p></div>
           </li>
           <li>
             <img src="./images/foto3.jpg" alt="Николай Тарасов" width="270" height="260" />
-            <h3 class="team-person">Николай Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <div class="border"><h3 class="team-person">Николай Тарасов</h3>
+            <p lang="en">Marketing</p></div>
           </li>
           <li>
             <img src="./images/foto4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-            <h3 class="team-person">Михаил Ермаков</h3>
-            <p lang="en">UI Designer</p>
+            <div class="border"><h3 class="team-person">Михаил Ермаков</h3>
+            <p lang="en">UI Designer</p></div>
           </li>
-        </div>
         </ul>
+      </div>
       </section>
     </main>
   </body>
