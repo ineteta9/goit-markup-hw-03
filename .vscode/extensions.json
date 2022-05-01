@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "EfranLpezPacheco.normalize"
+        "efranlpezpacheco.normalize",
+        "christian-kohler.path-intellisense"
     ]
 }
