@@ -150,9 +150,13 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   background: var(--home-color);
-  background-image: url(../images/img-home.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/img-home.jpg);
   color: var(--white-color);
   text-align: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -346,6 +350,9 @@ p {
   }
 .team-master {
   padding: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 .team-item li:not(:last-child) {
   margin-right: var(--card-set-gap);
@@ -370,7 +377,33 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.icon-link {
+
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+/*.masters-soc-item + .masters-soc-item {margin-left: 10px;}*/
+.masters-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  fill: var(--common-text-color);
+}
+/*.masters-soc-icon {
+  fill: currentColor;}*/
+
+.masters-soc-link:hover, .masters-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);}
+/*.masters-soc-link:hover .masters-soc-icon {fill: var(--white-color);}*/
+  
+
+/*.icon-link {
   display: flex;
   justify-content: center;
   margin-top: 16px;}
@@ -417,7 +450,7 @@ p {
   background-color: var(--white-color);
 }*/
 
-.icon-link li:nth-child(1) {background-image: url("../icon-soc/instagram.svg");}
+/*.icon-link li:nth-child(1) {background-image: url("../icon-soc/instagram.svg");}
 .icon-link li:nth-child(2) {background-image: url("../icon-soc/twitter.svg");}
 .icon-link li:nth-child(3) {background-image: url("../icon-soc/facebook.svg");}
 .icon-link li:nth-child(4) {background-image: url("../icon-soc/linkedin.svg");}*/
@@ -445,25 +478,26 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   background-color: var(--white-color);
-  background-position: center;
-  content: '';
-  background-repeat: no-repeat;
   }
+
 .clients-item li:not(:last-child) {
   margin-right: var(--card-set-gap);
   }
-.clients-item li:nth-child(1) {background-image: url("../svg/Logo1.svg");
+.client-item-icon {
+background-position: center;
+content: '';
+background-repeat: no-repeat;
+align-items: center;
 }
-.clients-item li:nth-child(2) {background-image: url("../svg/Logo2.svg");
-}
-.clients-item li:nth-child(3) {background-image: url("../svg/Logo3.svg");
-}
-.clients-item li:nth-child(4) {background-image: url("../svg/Logo4.svg");
-}
-.clients-item li:nth-child(5) {background-image: url("../svg/Logo5.svg");
-}
-.clients-item li:nth-child(6) {background-image: url("../svg/Logo6.svg");
-}
+.clients-item li:hover, .clients-item li:focus {
+    border: 1px solid var(--accent-color);}
+
+/*.clients-item li:nth-child(1) {background-image: url("../svg/Logo1.svg");}
+.clients-item li:nth-child(2) {background-image: url("../svg/Logo2.svg");}
+.clients-item li:nth-child(3) {background-image: url("../svg/Logo3.svg");}
+.clients-item li:nth-child(4) {background-image: url("../svg/Logo4.svg");}
+.clients-item li:nth-child(5) {background-image: url("../svg/Logo5.svg");}
+.clients-item li:nth-child(6) {background-image: url("../svg/Logo6.svg");}*/
 
 /* Футер */
 .footer {
@@ -472,6 +506,9 @@ p {
   padding-bottom: 60px;
   background: var(--home-color);
 }
+.footer-cont {display: flex;
+align-items: baseline;}
+
 .footer > .container > .bg {
   display: inline-block;
   width: 231px;}
@@ -515,7 +552,6 @@ a {text-decoration: none;}
   color: var(--accent-color);
 }
 .social {
-  display: inline-flex;
   width: 231px;
   height: 44px;
   margin-left: 70px;
@@ -533,7 +569,7 @@ a {text-decoration: none;}
 .social-link {
   display: flex;
   justify-content: center;
- }
+  margin-top: 20px;}
 
 .social-link li:not(:last-child) {margin-right: 10px;}
 
@@ -543,51 +579,26 @@ a {text-decoration: none;}
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 20px;
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
   }
-.social-link li:nth-child(1) {background-image: url("../icon-soc/instagram.svg");
-  }
-.social-link li:nth-child(2) {background-image: url("../icon-soc/twitter.svg");
-  }
-.social-link li:nth-child(3) {background-image: url("../icon-soc/facebook.svg");
-}
-.social-link li:nth-child(4) {background-image: url("../icon-soc/linkedin.svg");
- }
+.soc-link-icon {width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+fill: var(--white-color)}
 
-.social-icon {
-  color: var(--white-color)}
+.soc-link-icon:hover, .soc-link-icon:focus {
+  background-color: var(--accent-color);}
+  
+ .social-icon {
+  content: '';
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;}
 
-.icon-item-master {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    content: ''; 
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    color: var(--contakt-color);
-    background-color: var(--white-color);}
-
-.masters-icon {
-  fill: currentColor;
-}
-.icon-item-master:hover, .icon-item-master:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-
-
-
-
+/*_________________________________________*/
 /* _______ Портфолио______ */
-.link-portf {
-  color: var(--contakt-color);
-}
+.link-portf {color: var(--contakt-color)}
 
 /* Кнопки Портфолио */
 .item-button {
@@ -666,6 +677,12 @@ a {text-decoration: none;}
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
+}
+
+.elements li:first-child {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*.elements li {
