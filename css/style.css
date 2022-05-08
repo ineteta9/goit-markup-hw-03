@@ -500,7 +500,7 @@ align-items: center;
 .clients-item li:nth-child(6) {background-image: url("../svg/Logo6.svg");}*/
 
 /* Футер */
-.footer {
+.footer-main {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -509,7 +509,7 @@ align-items: center;
 .footer-cont {display: flex;
 align-items: baseline;}
 
-.footer > .container > .bg {
+.footer-main > .container > .bg {
   display: inline-block;
   width: 231px;}
 .logo-footer {
@@ -547,8 +547,8 @@ a {text-decoration: none;}
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer a:hover,
-.footer a:focus {
+.footer-main a:hover,
+.footer-main a:focus {
   color: var(--accent-color);
 }
 .social {
@@ -585,7 +585,9 @@ a {text-decoration: none;}
 height: 44px;
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
-fill: var(--white-color)}
+fill: var(--white-color)
+align-items: center;
+background-position: center}
 
 .soc-link-icon:hover, .soc-link-icon:focus {
   background-color: var(--accent-color);}
@@ -594,7 +596,8 @@ fill: var(--white-color)}
   content: '';
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+align-items: center;}
 
 /*_________________________________________*/
 /* _______ Портфолио______ */
@@ -679,7 +682,7 @@ fill: var(--white-color)}
   margin-bottom: var(--card-set-gap);
 }
 
-.elements li:first-child {
+.elements li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
