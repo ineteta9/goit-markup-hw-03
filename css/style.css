@@ -151,7 +151,7 @@ ul {
   padding-bottom: 200px;
   background: var(--home-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/img-home.jpg);
+  url(../images/Img-home.jpg);
   color: var(--white-color);
   text-align: center;
   background-size: cover;
@@ -382,20 +382,24 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 16px;
+  color: var(--common-text-color);
 }
 /*.masters-soc-item + .masters-soc-item {margin-left: 10px;}*/
 .masters-soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--white-color);
-  fill: var(--common-text-color);
+  fill: currentColor;
 }
-/*.masters-soc-icon {
-  fill: currentColor;}*/
+.team-cont {
+  padding-left: auto;
+padding-right: auto;}
+
+.masters-soc-item:not(:last-child) {
+  margin-right: 10px;}
 
 .masters-soc-link:hover, .masters-soc-link:focus {
   background-color: var(--accent-color);
@@ -478,19 +482,22 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   background-color: var(--white-color);
+  color: var(--common-text-color);
   }
 
 .clients-item li:not(:last-child) {
   margin-right: var(--card-set-gap);
   }
 .client-item-icon {
-background-position: center;
+align-items: center;
 content: '';
 background-repeat: no-repeat;
 align-items: center;
+fill: currentColor;
 }
 .clients-item li:hover, .clients-item li:focus {
-    border: 1px solid var(--accent-color);}
+    border: 1px solid var(--accent-color);
+  fill: var(--accent-color);}
 
 /*.clients-item li:nth-child(1) {background-image: url("../svg/Logo1.svg");}
 .clients-item li:nth-child(2) {background-image: url("../svg/Logo2.svg");}
@@ -580,24 +587,29 @@ a {text-decoration: none;}
   background-repeat: no-repeat;
   background-size: 20px;
   display: flex;
+
   }
-.soc-link-icon {width: 44px;
+.soc-link-icon {
+content: '';
+width: 44px;
 height: 44px;
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
-fill: var(--white-color)
+fill: var(--white-color);
 align-items: center;
-background-position: center}
+background-position: center;
+  justify-content: center;}
 
 .soc-link-icon:hover, .soc-link-icon:focus {
-  background-color: var(--accent-color);}
+  background-color: var(--accent-color);
+  fill: var(--white-color);}
   
  .social-icon {
   content: '';
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-align-items: center;}
+  align-items: center;}
 
 /*_________________________________________*/
 /* _______ Портфолио______ */
