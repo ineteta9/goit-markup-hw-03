@@ -410,7 +410,7 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  color: var(--icon-color);
+  color: var(--common-text-color);
 }
 
 .masters-soc-link {
@@ -518,7 +518,7 @@ p {
   align-items: center;
   width: 100%;
   height: 100%;
-  fill: var(--icon-color)
+  fill: var(--icon-color);
 }
 
 .client-item-list {
@@ -537,16 +537,15 @@ p {
   align-items: center;
   background-repeat: no-repeat;
   align-items: center;
-  fill: var(--common-text-color);
-}
+  fill: var(--icon-color);}
 /*.clients-item li:hover,
 .clients-item li:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }*/
 
-.clients-style:hover,
-.clients-style:focus {
+.clients-style:hover, .client-item-icon:hover
+.clients-style:focus, .client-item-icon:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -584,9 +583,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-a {display: block;
-  text-decoration: none;
-}
+a {text-decoration: none;}
 
 .footer-adres {
   margin-top: 20px;
@@ -768,7 +765,8 @@ a {display: block;
   margin-left: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
-.elements-link {display: block;}
+.elements a {display: block;}
+
 .elements-link:hover, .elements-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
