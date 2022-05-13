@@ -150,6 +150,17 @@ ul {
 }
 
 /* Главная */
+
+.home {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: var(--home-color);
+  background-image: url(../images/img-home.jpg);
+  color: var(--white-color);
+  text-align: center;
+}
+.hero {background-image: url(../images/img-home.jpg);}
+
 .container {
   width: 1200px;
   padding-left: 15px;
