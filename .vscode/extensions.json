@@ -1,5 +1,7 @@
 {
-    "recommendations": [
-        "EfranLpezPacheco.normalize"
-    ]
+  "recommendations": [
+    "efranlpezpacheco.normalize",
+    "christian-kohler.path-intellisense",
+    "salesforce.salesforce-vscode-slds"
+  ]
 }
