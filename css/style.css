@@ -529,8 +529,7 @@ p {
   align-items: center;
   width: 100%;
   height: 100%;
-  fill: var(--icon-color);
-}
+  }
 
 .client-item-list {
   width: 170px;
@@ -555,10 +554,11 @@ p {
   fill: var(--accent-color);
 }*/
 
-.clients-style:hover, .client-item-icon:hover
-.clients-style:focus, .client-item-icon:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+.clients-style:hover,
+.clients-style:focus {border: 1px solid var(--accent-color);
+  }
+.clients-style:hover .client-item-icon,
+.clients-style:focus .client-item-icon {fill: var(--accent-color);
 }
 
 /*.clients-item li:nth-child(1) {background-image: url("../svg/Logo1.svg");}
